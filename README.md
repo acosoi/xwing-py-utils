@@ -30,4 +30,5 @@ python ../src/inventory.py --data ../data --images ../images --purchases purchas
 ## Future Improvements
 
 * update `MarkdownPrinter` to be able to scale down images (they're currently a bit too large when converting the Markdown output to PDF);
+* add a list of moves per ship (preferably with images);
 * `xwing-data` does not provide images of actual ships; look for other sources for those images (for use in `inventory.py`).
