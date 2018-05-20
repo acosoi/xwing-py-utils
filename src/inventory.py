@@ -92,6 +92,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Generate an inventory document based on a list of purchases.')
     parser.add_argument("--images", required="True", help="Path to xwing-data/images folder")
+    parser.add_argument("--shipimages", required="False", help="Path to xwing-ship-images/images folder")
     parser.add_argument("--data", required="True", help="Path to xwing-data/data folder")
     parser.add_argument("--purchases", required="True", help="Path to input file")
     parser.add_argument("--output", required="True", help="Path to output file")
@@ -118,7 +119,7 @@ if __name__ == "__main__":
         inv.addPurchase(purchase)
 
     # Print out the entire inventory with Markdown syntax
-    printer = MarkdownPrinter(args["images"])
+    printer = MarkdownPrinter(args["images"], args["shipimages"])
     output = "# Ships\n\n"
     output += inv.printItemsByType(ItemType.SHIP, printer)
     output += "\n\n# Pilots\n\n"

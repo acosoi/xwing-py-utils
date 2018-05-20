@@ -1,6 +1,7 @@
 # Ships
 
 ### TIE/fo Fighter x 2
+![](../../xwing-ship-images/images/ships/tiefofighter.png)
 * Factions: First Order
 * Attack: 2
 * Agility: 3
@@ -9,6 +10,7 @@
 * Actions: Focus, Target Lock, Barrel Roll, Evade
 
 ### T-70 X-wing x 1
+![](../../xwing-ship-images/images/ships/t70xwing.png)
 * Factions: Resistance
 * Attack: 3
 * Agility: 2
@@ -21,7 +23,7 @@
 # Pilots
 
 ### "Omega Ace" x 1
-![](../images/pilots/First Order/TIE-fo Fighter/omega-ace.png)
+![](../../xwing-data/images/pilots/First Order/TIE-fo Fighter/omega-ace.png)
 * Unique: True
 * Ship: TIE/fo Fighter
 * Skill: 7
@@ -31,7 +33,7 @@
 * Faction: First Order
 
 ### Zeta Squadron Pilot x 2
-![](../images/pilots/First Order/TIE-fo Fighter/zeta-squadron-pilot.png)
+![](../../xwing-data/images/pilots/First Order/TIE-fo Fighter/zeta-squadron-pilot.png)
 * Unique: false
 * Ship: TIE/fo Fighter
 * Skill: 3
@@ -41,7 +43,7 @@
 * Faction: First Order
 
 ### "Zeta Ace" x 1
-![](../images/pilots/First Order/TIE-fo Fighter/zeta-ace.png)
+![](../../xwing-data/images/pilots/First Order/TIE-fo Fighter/zeta-ace.png)
 * Unique: True
 * Ship: TIE/fo Fighter
 * Skill: 5
@@ -51,7 +53,7 @@
 * Faction: First Order
 
 ### Blue Squadron Novice x 1
-![](../images/pilots/Resistance/T-70 X-wing/blue-squadron-novice.png)
+![](../../xwing-data/images/pilots/Resistance/T-70 X-wing/blue-squadron-novice.png)
 * Unique: false
 * Ship: T-70 X-wing
 * Skill: 2
@@ -61,7 +63,7 @@
 * Faction: Resistance
 
 ### Omega Squadron Pilot x 2
-![](../images/pilots/First Order/TIE-fo Fighter/omega-squadron-pilot.png)
+![](../../xwing-data/images/pilots/First Order/TIE-fo Fighter/omega-squadron-pilot.png)
 * Unique: false
 * Ship: TIE/fo Fighter
 * Skill: 4
@@ -71,7 +73,7 @@
 * Faction: First Order
 
 ### Poe Dameron x 1
-![](../images/pilots/Resistance/T-70 X-wing/poe-dameron.png)
+![](../../xwing-data/images/pilots/Resistance/T-70 X-wing/poe-dameron.png)
 * Unique: True
 * Ship: T-70 X-wing
 * Skill: 8
@@ -81,7 +83,7 @@
 * Faction: Resistance
 
 ### "Blue Ace" x 1
-![](../images/pilots/Resistance/T-70 X-wing/blue-ace.png)
+![](../../xwing-data/images/pilots/Resistance/T-70 X-wing/blue-ace.png)
 * Unique: True
 * Ship: T-70 X-wing
 * Skill: 5
@@ -91,7 +93,7 @@
 * Faction: Resistance
 
 ### Red Squadron Veteran x 1
-![](../images/pilots/Resistance/T-70 X-wing/red-squadron-veteran.png)
+![](../../xwing-data/images/pilots/Resistance/T-70 X-wing/red-squadron-veteran.png)
 * Unique: false
 * Ship: T-70 X-wing
 * Skill: 4
@@ -101,7 +103,7 @@
 * Faction: Resistance
 
 ### "Epsilon Leader" x 1
-![](../images/pilots/First Order/TIE-fo Fighter/epsilon-leader.png)
+![](../../xwing-data/images/pilots/First Order/TIE-fo Fighter/epsilon-leader.png)
 * Unique: True
 * Ship: TIE/fo Fighter
 * Skill: 6
@@ -111,7 +113,7 @@
 * Faction: First Order
 
 ### Epsilon Squadron Pilot x 2
-![](../images/pilots/First Order/TIE-fo Fighter/epsilon-squadron-pilot.png)
+![](../../xwing-data/images/pilots/First Order/TIE-fo Fighter/epsilon-squadron-pilot.png)
 * Unique: false
 * Ship: TIE/fo Fighter
 * Skill: 1
@@ -125,7 +127,7 @@
 # Upgrades
 
 ### Proton Torpedoes x 1
-![](../images/upgrades/Torpedo/proton-torpedoes.png)
+![](../../xwing-data/images/upgrades/Torpedo/proton-torpedoes.png)
 * Slot: Torpedo
 * Unique: false
 * Points: 4
@@ -134,7 +136,7 @@
 * Text: <strong>Attack (target lock):</strong> Spend your target lock and discard this card to perform this attack.<br /><br />You may change 1 of your [Focus] results to a [Critical Hit] result.
 
 ### Weapons Guidance x 1
-![](../images/upgrades/Tech/weapons-guidance.png)
+![](../../xwing-data/images/upgrades/Tech/weapons-guidance.png)
 * Slot: Tech
 * Unique: false
 * Points: 2
@@ -143,7 +145,7 @@
 * Text: When attacking, you may spend a focus token to change 1 of your blank results to a [Hit] result.
 
 ### BB-8 x 1
-![](../images/upgrades/Astromech/bb-8.png)
+![](../../xwing-data/images/upgrades/Astromech/bb-8.png)
 * Slot: Astromech
 * Unique: True
 * Points: 2
@@ -152,7 +154,7 @@
 * Text: When you reveal a green maneuver, you may perform a free barrel roll action.
 
 ### R5-X3 x 1
-![](../images/upgrades/Astromech/r5-x3.png)
+![](../../xwing-data/images/upgrades/Astromech/r5-x3.png)
 * Slot: Astromech
 * Unique: True
 * Points: 1
@@ -161,7 +163,7 @@
 * Text: Before you reveal your maneuver, you may discard this card to ignore obstacles until the end of the round.
 
 ### Wired x 1
-![](../images/upgrades/Elite/wired.png)
+![](../../xwing-data/images/upgrades/Elite/wired.png)
 * Slot: Elite
 * Unique: false
 * Points: 1

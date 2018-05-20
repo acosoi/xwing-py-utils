@@ -5,9 +5,11 @@ from itemtype import ItemType
 class MarkdownPrinter:
 
     artPath = ""
+    shipArtPath = None
 
-    def __init__(self, path):
-        self.artPath = path
+    def __init__(self, artPath, shipArtPath):
+        self.artPath = artPath
+        self.shipArtPath = shipArtPath
 
     # Constructs a Markdown representation of an item. The exact layout varies
     # depending on the item type
@@ -18,12 +20,13 @@ class MarkdownPrinter:
 
             return (
                 '### ' + itemDefinition["name"] + ' x ' + str(count) + '\n' +
-               '* Factions: ' + factions + '\n' +
-               '* Attack: ' + str(itemDefinition["attack"]) + '\n' +
-               '* Agility: ' + str(itemDefinition["agility"]) + '\n' +
-               '* Hull: ' + str(itemDefinition["hull"]) + '\n' +
-               '* Shields: ' + str(itemDefinition["shields"]) + '\n' +
-               '* Actions: ' + actions + '\n'
+                '![](' + self.shipArtPath + '/ships/' + itemDefinition["xws"] + '.png)\n'
+                '* Factions: ' + factions + '\n' +
+                '* Attack: ' + str(itemDefinition["attack"]) + '\n' +
+                '* Agility: ' + str(itemDefinition["agility"]) + '\n' +
+                '* Hull: ' + str(itemDefinition["hull"]) + '\n' +
+                '* Shields: ' + str(itemDefinition["shields"]) + '\n' +
+                '* Actions: ' + actions + '\n'
             )
 
         if type == ItemType.PILOT:
