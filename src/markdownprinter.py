@@ -20,60 +20,25 @@ class MarkdownPrinter:
 
             return (
                 '### ' + itemDefinition["name"] + ' x ' + str(count) + '\n' +
-                '![](' + self.shipArtPath + '/ships/' + itemDefinition["xws"] + '.png)\n'
-                '* Factions: ' + factions + '\n' +
-                '* Attack: ' + str(itemDefinition["attack"]) + '\n' +
-                '* Agility: ' + str(itemDefinition["agility"]) + '\n' +
-                '* Hull: ' + str(itemDefinition["hull"]) + '\n' +
-                '* Shields: ' + str(itemDefinition["shields"]) + '\n' +
-                '* Actions: ' + actions + '\n'
+                '<img src="' + self.shipArtPath + '/ships/' + itemDefinition["xws"] + '.png" width="300px" />\n\n' +
+                ' **Factions** ' + factions + '\n\n' +
+                ' **Attack** ' + str(itemDefinition["attack"]) +
+                ' **Agility** ' + str(itemDefinition["agility"]) +
+                ' **Hull** ' + str(itemDefinition["hull"])  +
+                ' **Shields** ' + str(itemDefinition["shields"]) + '\n\n' +
+                ' **Actions** ' + actions + '\n'
             )
 
         if type == ItemType.PILOT:
-            slots = ', '.join(itemDefinition["slots"])
-
-            unique = "false"
-            if "unique" in itemDefinition:
-                unique = itemDefinition["unique"]
-
-            text = "-"
-            if "text" in itemDefinition:
-                text = itemDefinition["text"]
-
             return (
                 '### ' + itemDefinition["name"] + ' x ' + str(count) + '\n' +
-                '![](' + self.artPath + '/' + itemDefinition["image"] + ')\n'
-                '* Unique: ' + str(unique) + '\n' +
-                '* Ship: ' + str(itemDefinition["ship"]) + '\n' +
-                '* Skill: ' + str(itemDefinition["skill"]) + '\n' +
-                '* Points: ' + str(itemDefinition["points"]) + '\n' +
-                '* Slots: ' + slots + '\n' +
-                '* Text: ' + text + '\n' +
-                '* Faction: ' + str(itemDefinition["faction"]) + '\n'
+                '<img src="' + self.artPath + '/' + itemDefinition["image"] + '" width="240px" />\n'
             )
 
         if type == ItemType.UPGRADE:
-            unique = "false"
-            if "unique" in itemDefinition:
-                unique = itemDefinition["unique"]
-
-            attack = "-"
-            if "attack" in itemDefinition:
-                attack = itemDefinition["attack"]
-
-            rangeStr = "-"
-            if "range" in itemDefinition:
-                rangeStr = itemDefinition["range"]
-
             return (
                 '### ' + itemDefinition["name"] + ' x ' + str(count) + '\n' +
-                '![](' + self.artPath + '/' + itemDefinition["image"] + ')\n'
-                '* Slot: ' + str(itemDefinition["slot"]) + '\n' +
-                '* Unique: ' + str(unique) + '\n' +
-                '* Points: ' + str(itemDefinition["points"]) + '\n' +
-                '* Attack: ' + str(attack) + '\n' +
-                '* Range: ' + str(rangeStr) + '\n' +
-                '* Text: ' + str(itemDefinition["text"]) + '\n'
+                '<img src="' + self.artPath + '/' + itemDefinition["image"] + '" width="240px" />\n'
             )
 
         return "MarkdownPrinter::printItem - unsupported item type " + str(type)

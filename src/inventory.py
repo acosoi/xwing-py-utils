@@ -122,9 +122,9 @@ if __name__ == "__main__":
     printer = MarkdownPrinter(args["images"], args["shipimages"])
     output = "# Ships\n\n"
     output += inv.printItemsByType(ItemType.SHIP, printer)
-    output += "\n\n# Pilots\n\n"
+    output += "<div style='page-break-after: always;'></div>\n\n# Pilots\n\n"
     output += inv.printItemsByType(ItemType.PILOT, printer)
-    output += "\n\n# Upgrades\n\n"
+    output += "<div style='page-break-after: always;'></div>\n\n# Upgrades\n\n"
     output += inv.printItemsByType(ItemType.UPGRADE, printer)
     with open(args["output"], "w") as outputFile:
         outputFile.write(output)

@@ -29,7 +29,7 @@ python ../src/inventory.py --data ../../xwing-data/data --images ../../xwing-dat
 
 ## Future Improvements
 
-* update `MarkdownPrinter` to be able to scale down images (they're currently a bit too large when converting the Markdown output to PDF);
+* improve layout of the inventory export (perhaps switch to a table?)
 * add a list of moves per ship (preferably with images).
 
 ---
